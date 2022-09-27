@@ -1,7 +1,11 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const PrivacyPolicy = () => {
     return (<>
+        <Helmet>
+            <title>Privacy Policy</title>
+        </Helmet>
         <h1>Privacy Policy for SneakIn</h1>
 
         <p>At Sneak In, accessible from https://sneak-in.xyz, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Sneak In and how we use it.</p>

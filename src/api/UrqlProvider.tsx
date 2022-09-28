@@ -54,6 +54,7 @@ const UrqlProvider = ({ children }: UrqlProviderProps) => {
             audience: "hasura",
             client_id: "QcWkT4kXnhf3kWwRvKM3viYugAkKIL0J",
             scope: "openid profile",
+            responseType: "code",
             ignoreCache: true,
           });
 

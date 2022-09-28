@@ -51,10 +51,7 @@ const UrqlProvider = ({ children }: UrqlProviderProps) => {
         cacheExchange,
         fetchOptionsExchange(async (fetchOptions: any) => {
           await getAccessTokenSilently({
-            audience: "hasura",
             client_id: "QcWkT4kXnhf3kWwRvKM3viYugAkKIL0J",
-            scope: "openid profile",
-            responseType: "token",
             ignoreCache: true,
           });
 

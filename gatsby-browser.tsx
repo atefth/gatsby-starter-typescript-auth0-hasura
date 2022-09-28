@@ -9,8 +9,8 @@ import "bootstrap/dist/js/bootstrap.min.js";
 export const wrapRootElement = ({ element }) => {
   return (
     <Auth0Provider
-      domain={process.env.GATSBY_AUTH0_DOMAIN}
-      clientId={process.env.GATSBY_AUTH0_CLIENT_ID}
+      domain={process.env.GATSBY_AUTH0_DOMAIN || "http://localhost"}
+      clientId={process.env.GATSBY_AUTH0_CLIENT_ID || "client_id"}
       redirectUri={process.env.GATSBY_AUTH0_REDIRECT_URI}
       audience={process.env.GATSBY_AUTH0_AUDIENCE}
       responseType="id_token"

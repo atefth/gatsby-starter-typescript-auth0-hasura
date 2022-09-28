@@ -6,8 +6,8 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `gatsby-starter-typescript-auth0-hasura`,
-    siteUrl: `https://github.com/whitebrick/gatsby-starter-typescript-auth0-hasura`,
+    title: `sneak-in-dashboard`,
+    siteUrl: `https://github.com/atefth/sneak-in-bootstrap`,
   },
   plugins: [`gatsby-plugin-react-helmet`],
   pathPrefix: `/gatsby`,

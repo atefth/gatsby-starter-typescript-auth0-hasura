@@ -52,7 +52,8 @@ const UrqlProvider = ({ children }: UrqlProviderProps) => {
         fetchOptionsExchange(async (fetchOptions: any) => {
           await getAccessTokenSilently({
             audience: "hasura",
-            scope: "openid profile email offline_access",
+            client_id: 'QcWkT4kXnhf3kWwRvKM3viYugAkKIL0J'
+            scope: "openid profile",
             ignoreCache: true,
           });
 

@@ -13,7 +13,7 @@ export const wrapRootElement = ({ element }) => {
       clientId={process.env.GATSBY_AUTH0_CLIENT_ID}
       redirectUri={process.env.GATSBY_AUTH0_REDIRECT_URI}
       audience={process.env.GATSBY_AUTH0_AUDIENCE}
-      responseType="token id_token"
+      responseType="id_token"
       scope="openid profile email offline_access"
       useRefreshTokens
       cacheLocation="localstorage"

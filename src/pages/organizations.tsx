@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import AddOrganization from "../components/Organizations/AddOrganiation";
 
 const Organizations = () => {
-  const { isAuthenticated, loginWithRedirect, logout, isLoading } = useAuth0();
+  const { isAuthenticated, loginWithRedirect, isLoading } = useAuth0();
 
   return (
     <>

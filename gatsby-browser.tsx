@@ -11,9 +11,9 @@ export const wrapRootElement = ({ element }) => {
     <Auth0Provider
       domain={process.env.GATSBY_AUTH0_DOMAIN || "http://localhost"}
       clientId={process.env.GATSBY_AUTH0_CLIENT_ID || "client_id"}
-      redirectUri={process.env.GATSBY_AUTH0_REDIRECT_URI}
+      redirectUri={window.location.origin}
       audience={process.env.GATSBY_AUTH0_AUDIENCE}
-      responseType="id_token"
+      responseType="token"
       scope="openid profile email offline_access"
       useRefreshTokens
       cacheLocation="localstorage"

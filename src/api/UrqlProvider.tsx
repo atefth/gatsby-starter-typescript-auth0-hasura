@@ -51,7 +51,7 @@ const UrqlProvider = ({ children }: UrqlProviderProps) => {
         cacheExchange,
         fetchOptionsExchange(async (fetchOptions: any) => {
           await getAccessTokenSilently({
-            audience: process.env.GATSBY_AUTH0_AUDIENCE,
+            audience: "hasura",
             scope: "openid profile email offline_access",
             ignoreCache: true,
           });
